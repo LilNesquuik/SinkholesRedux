@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\2021-20XX\\𝐹𝑖𝑐ℎ𝑖𝑒𝑟𝑠\\EXTINCTION\\PLUGINS2\\BetterSinkholes-4.0.1\\BetterSinkholes\\BetterSinkholes.csproj": {}
+  },
+  "projects": {
+    "D:\\2021-20XX\\𝐹𝑖𝑐ℎ𝑖𝑒𝑟𝑠\\EXTINCTION\\PLUGINS2\\BetterSinkholes-4.0.1\\BetterSinkholes\\BetterSinkholes.csproj": {
+      "version": "4.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\2021-20XX\\𝐹𝑖𝑐ℎ𝑖𝑒𝑟𝑠\\EXTINCTION\\PLUGINS2\\BetterSinkholes-4.0.1\\BetterSinkholes\\BetterSinkholes.csproj",
+        "projectName": "BetterSinkholes",
+        "projectPath": "D:\\2021-20XX\\𝐹𝑖𝑐ℎ𝑖𝑒𝑟𝑠\\EXTINCTION\\PLUGINS2\\BetterSinkholes-4.0.1\\BetterSinkholes\\BetterSinkholes.csproj",
+        "packagesPath": "C:\\Users\\zment\\.nuget\\packages\\",
+        "outputPath": "D:\\2021-20XX\\𝐹𝑖𝑐ℎ𝑖𝑒𝑟𝑠\\EXTINCTION\\PLUGINS2\\BetterSinkholes-4.0.1\\BetterSinkholes\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\zment\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "EXILED": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
