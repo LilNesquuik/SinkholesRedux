@@ -23,13 +23,13 @@ sinkholes_redux:
 ```
 
 ### Config Help
-Config | Description
-:---: | :---: 
-is_enabled: true | If plugin is enabled
-teleport_distance: 3.2 | Max collision distance (Default recommended)
-blackout_on_corroding: true | If the light blink when player fall in sinkhole
-turn_off_duration: 0.8 | The time in the secondes of the blackout
-teleport_message: | if you want to add a broadcast when a player in sinkhole
+Config | Settings | Description
+:---: | :---: | :---: 
+is_enabled: | true | If plugin is enabled
+teleport_distance: | 3.2 | Max collision distance (Default recommended)
+blackout_on_corroding: | true | If the light blink when player fall in sinkhole
+turn_off_duration: | 0.8 | The time in the secondes of the blackout
+teleport_message: | empty(false) | if you want to add a broadcast when a player in sinkhole
 
 ### Credits
  - Build#8971 For the original plugin
