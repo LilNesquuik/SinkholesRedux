@@ -2,7 +2,7 @@
 A simple plugin based on BuildBoy's BetterSinkholes2, with some extra features, and a chasm fall effect to give a realistic look, the plugin has also been updated to fix all bugs and the plugin also has a configurable mini blackout when a player falls to mimic interference, it can be disabled as well as amplified, if you have any problems please contact me via the category from Github or discord : LilNesquuik#1028
 
 ```yml
-sinkholes_redux:
+sinkholes_redux1.0:
   is_enabled: true
   # The distance from the center of a sinkhole where a player gets teleported. This is limited to inside the sinkhole's range. 3.3 recommanded
   teleport_distance: 3.29999995
