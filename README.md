@@ -38,11 +38,10 @@ Here is the documentation concerning the config.yml to simplify your task
 | `TeleportDistance` | float | 3.2f | Max collision distance (Default recommended) Not to put below 3. |
 | `BlackoutOnCorroding` | float | true | If the light blackout when player fall in sinkhole. |
 | `TurnOffDuration` | float | 0.8 | The time in the secondes of the blackout. |
+| `KillCorroding` | bool | false | If the player dies necessarily in the dimension. |
 | `TeleportMessage` | float | false | if you want to add a broadcast when a player in sinkhole |
 
 ### Credits
  - `blackruby#2562` For the original plugin
  - `Build#8971` For the version updated to EXILED 5
- 
- 
  - `bladuk.#7777` A big thank you to him for helping me with the code
