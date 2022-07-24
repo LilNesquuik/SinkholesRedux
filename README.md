@@ -1,5 +1,5 @@
 # SinkholesRedux
-A simple plugin based on blackruby BetterSinkholes plugin, with some extra features, and a chasm fall effect to give a realistic look, the plugin has also been updated to fix all bugs and the plugin also has a configurable mini blackout when a player falls to mimic interference, it can be disabled as well as amplified, if you have any problems please contact me via the category from Github or discord : LilNesquuik#1028
+SinkholesRedux is a plugin designed to make Lcz dangerous, be careful where you step, Features : a chasm fall effect to give a realistic look, the plugin has also been updated to fix all bugs and the plugin also has a configurable mini blackout when a player falls to mimic interference, it can be disabled as well as amplified, if you have any problems please contact me via the category from Github or discord : LilNesquuik#1028
 
 ## Requirements
 - This plugin uses [EXILED](https://github.com/galaxy119/EXILED/).
@@ -8,7 +8,7 @@ A simple plugin based on blackruby BetterSinkholes plugin, with some extra featu
 Note: **SinkholesRedux is only guaranteed to work with Exiled 5.2.2 (+) and SCP:SL 12(+)!**
 
 ```yml
-sinkholes_redux1.0:
+sinkholes_redux:
   is_enabled: true
   # The distance from the center of a sinkhole where a player gets teleported. This is limited to inside the sinkhole's range. 3.3 recommanded
   teleport_distance: 3.29999995
@@ -42,6 +42,4 @@ Here is the documentation concerning the config.yml to simplify your task
 | `TeleportMessage` | float | false | if you want to add a broadcast when a player in sinkhole |
 
 ### Credits
- - `blackruby#2562` For the original plugin
- - `Build#8971` For the version updated to EXILED 5
  - `bladuk.#7777` A big thank you to him for helping me with the code
