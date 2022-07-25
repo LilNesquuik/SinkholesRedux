@@ -7,7 +7,7 @@ SinkholesRedux is a plugin designed to make Lcz dangerous, be careful where you 
 
 Note: **SinkholesRedux is only guaranteed to work with Exiled 5.2.2 (+) and SCP:SL 12(+)!**
 
-[![Github All Releases](https://img.shields.io/github.com/LilNesquuik/SinkholesRedux/total?color=blue&style=for-the-badge)]()
+https://camo.githubusercontent.com/4ab44a2c017fd81a0c38b76156ef03f7bcb41731d6c82b0f15495a3bcd1f53a6/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f646f776e6c6f6164732f48656973656e62657267333636362f52656372656174696f6e616c48617a617264732f746f74616c3f7374796c653d666f722d7468652d6261646765
 
 ```yml
 sinkholes_redux:
