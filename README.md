@@ -7,7 +7,7 @@ SinkholesRedux is a plugin just for fall in the Sinkhole on Light Containment zo
 
 Note: **SinkholesRedux is only guaranteed to work with Exiled 5.x.x (+) and SCP:SL 12(+)!**
 
-![GitHub release (latest by date)](https://img.shields.io/github/downloads/LilNesquuik/SinkholesRedux/total?color=dark&style=for-the-badge)
+![GitHub release (latest by date)](https://img.shields.io/github/downloads/LilNesquuik/SinkholesRedux/total?color=black&style=for-the-badge)
 
 ```yml
 sinkholes_redux:
