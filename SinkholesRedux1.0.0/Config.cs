@@ -2,9 +2,12 @@
 
 namespace SinkholesRedux
 {
+    using System.Collections.Generic;
     using System.ComponentModel;
+    using Exiled.API.Enums;
     using Exiled.API.Features;
     using Exiled.API.Interfaces;
+    using MEC;
 
     public class Config : IConfig
     {
@@ -19,8 +22,6 @@ namespace SinkholesRedux
         [Description("The number of seconds of the blackout when passing through a sinkhole.")]
         public float TurnOffDuration { get; set; } = 0.9f;
 
-        [Description("Whether or not once the player is in the dimension he necessarily dies?.")]
-        public bool KillCorroding { get; set; } = false;
 
         [Description("The distance from the center of a sinkhole where a player gets teleported. This is limited to inside the sinkhole's range. 2.3 recommanded")]
         public Broadcast TeleportMessage { get; set; } = new Broadcast
@@ -30,5 +31,9 @@ namespace SinkholesRedux
             Show = false,
         };
 
+
+
     }
+
 }
+
