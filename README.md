@@ -1,5 +1,5 @@
 # SinkholesRedux
-SinkholesRedux is a plugin designed to make Lcz dangerous, be careful where you step, Features : a chasm fall effect to give a realistic look, the plugin has also been updated to fix all bugs and the plugin also has a configurable mini blackout when a player falls to mimic interference, it can be disabled as well as amplified, if you have any problems please contact me via the category from Github or discord : LilNesquuik#1028
+SinkholesRedux is a plugin just for fall in the Sinkhole on Light Containment zone, with more features for be SCARY !!!
 
 ## Requirements
 - This plugin uses [EXILED](https://github.com/galaxy119/EXILED/).
