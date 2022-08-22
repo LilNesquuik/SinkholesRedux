@@ -15,38 +15,40 @@ namespace SinkholesRedux
 
         public EventHandlers(Plugin plugin) => this.plugin = plugin;
 
-        public void OnWalkingOnSinkhole(StayingOnEnvironmentalHazardEventArgs ev)
+        public void OnEnteringEnvironmentalHazard(EnteringEnvironmentalHazardEventArgs ev)
         {
-            if (ev.Player.SessionVariables.ContainsKey("IsNPC"))
-            return;
-
-            if (ev.Player.IsScp)
-            return;
-
-            if ((ev.Player.Position - ev.EnvironmentalHazard.transform.position).sqrMagnitude > plugin.Config.TeleportDistance * plugin.Config.TeleportDistance)
-            return;
-
-            ev.Player.DisableEffect(EffectType.SinkHole);
-
-
-
-            ev.Player.ReferenceHub.scp106PlayerScript.GrabbedPosition = ev.Player.Position;
-
-            ev.Player.Position += Vector3.up * -0.55f;
-
-
-            Timing.CallDelayed(1.5f, () =>
+            if (ev.EnvironmentalHazard is SinkholeEnvironmentalHazard sinkholeEnvironmentalHazard)
             {
+                if (ev.Player.SessionVariables.ContainsKey("IsNPC"))
+                    return;
 
-                if (plugin.Config.BlackoutOnCorroding)
+                if (ev.Player.IsScp)
+                    return;
+
+                if ((ev.Player.Position - ev.EnvironmentalHazard.transform.position).sqrMagnitude > plugin.Config.TeleportDistance * plugin.Config.TeleportDistance)
+                    return;
+
+                ev.Player.DisableEffect(EffectType.SinkHole);
+
+
+
+                ev.Player.ReferenceHub.scp106PlayerScript.GrabbedPosition = ev.Player.Position;
+
+                ev.Player.Position += Vector3.up * -0.55f;
+
+
+                Timing.CallDelayed(1.5f, () =>
                 {
-                    Map.TurnOffAllLights(plugin.Config.TurnOffDuration, ZoneType.LightContainment);
-                }
 
-                ev.Player.EnableEffect(EffectType.Corroding);
-                ev.Player.Broadcast(plugin.Config.TeleportMessage);
-            });
+                    if (plugin.Config.BlackoutOnCorroding)
+                    {
+                        Map.TurnOffAllLights(plugin.Config.TurnOffDuration, ZoneType.LightContainment);
+                    }
 
+                    ev.Player.EnableEffect(EffectType.Corroding);
+                    ev.Player.Broadcast(plugin.Config.TeleportMessage);
+                });
+            }
 
         }
 
