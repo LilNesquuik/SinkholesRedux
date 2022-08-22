@@ -16,14 +16,14 @@
         public override void OnEnabled()
         {
             eventHandlers = new EventHandlers(this);
-            Exiled.Events.Handlers.Player.EnteringEnvironmentalHazard += eventHandlers.OnEnteringEnvironmentalHazard;
+            Exiled.Events.Handlers.Player.StayingOnEnvironmentalHazard += eventHandlers.OnStayEnvironmentalHazard;
             base.OnEnabled();
         }
 
 
         public override void OnDisabled()
         {
-            Exiled.Events.Handlers.Player.EnteringEnvironmentalHazard -= eventHandlers.OnEnteringEnvironmentalHazard;
+            Exiled.Events.Handlers.Player.StayingOnEnvironmentalHazard -= eventHandlers.OnStayEnvironmentalHazard;
             eventHandlers = null;
             base.OnDisabled();
         }

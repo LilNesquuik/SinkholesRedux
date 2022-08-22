@@ -15,30 +15,21 @@ namespace SinkholesRedux
 
         public EventHandlers(Plugin plugin) => this.plugin = plugin;
 
-        public void OnEnteringEnvironmentalHazard(EnteringEnvironmentalHazardEventArgs ev)
+        public void OnStayEnvironmentalHazard(StayingOnEnvironmentalHazardEventArgs ev)
         {
             if (ev.EnvironmentalHazard is SinkholeEnvironmentalHazard sinkholeEnvironmentalHazard)
             {
-                if (ev.Player.SessionVariables.ContainsKey("IsNPC"))
-                    return;
-
                 if (ev.Player.IsScp)
                     return;
 
-                if ((ev.Player.Position - ev.EnvironmentalHazard.transform.position).sqrMagnitude > plugin.Config.TeleportDistance * plugin.Config.TeleportDistance)
+                if ((ev.Player.Position - sinkholeEnvironmentalHazard.transform.position).sqrMagnitude > plugin.Config.TeleportDistance * plugin.Config.TeleportDistance)
                     return;
 
-                ev.Player.DisableEffect(EffectType.SinkHole);
+                ev.Player.Position += Vector3.down * plugin.Config.fallingSpeed;
 
-
-
-                ev.Player.ReferenceHub.scp106PlayerScript.GrabbedPosition = ev.Player.Position;
-
-                ev.Player.Position += Vector3.up * -0.55f;
-
-
-                Timing.CallDelayed(1.5f, () =>
+                Timing.CallDelayed(1f, () =>
                 {
+                    ev.Player.ReferenceHub.scp106PlayerScript.GrabbedPosition = ev.Player.Position;
 
                     if (plugin.Config.BlackoutOnCorroding)
                     {
