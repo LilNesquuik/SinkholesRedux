@@ -25,11 +25,12 @@ namespace SinkholesRedux
                 if ((ev.Player.Position - sinkholeEnvironmentalHazard.transform.position).sqrMagnitude > plugin.Config.TeleportDistance * plugin.Config.TeleportDistance)
                     return;
 
+                ev.Player.ReferenceHub.scp106PlayerScript.GrabbedPosition = ev.Player.Position;
+
                 ev.Player.Position += Vector3.down * plugin.Config.fallingSpeed;
 
                 Timing.CallDelayed(1f, () =>
                 {
-                    ev.Player.ReferenceHub.scp106PlayerScript.GrabbedPosition = ev.Player.Position;
 
                     if (plugin.Config.BlackoutOnCorroding)
                     {
@@ -37,6 +38,7 @@ namespace SinkholesRedux
                     }
 
                     ev.Player.EnableEffect(EffectType.Corroding);
+                    ev.Player.EnableEffect(EffectType.SinkHole);
                     ev.Player.Broadcast(plugin.Config.TeleportMessage);
                 });
             }
